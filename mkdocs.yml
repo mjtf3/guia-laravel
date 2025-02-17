@@ -1,4 +1,8 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
 site_name: Guia Laravel
 site_url: https://mjtf3.github.io/guia-laravel/
 theme:
   name: material
+  features:
+    - content.code.copy

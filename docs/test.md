@@ -1,28 +1,3 @@
-# Guia de laravel para el proyecto de la ua
-# Creación de un Proyecto Laravel
-
-## Nuevo Proyecto
-Para crear un nuevo proyecto Laravel 11:
-```bash
-composer create-project laravel/laravel=11.* miproyecto --prefer-dist
-```
-
-## Configuración Inicial
-1. Edita el archivo `.env`:
-    ```
-    SESSION_DRIVER=file
-    ```
-
-## Ejecución del Proyecto
-Para iniciar el servidor de desarrollo:
-```bash
-php artisan serve
-```
-
-> **Nota**: Este comando iniciará un servidor local en `http://localhost:8000`
-
-
-
 # Migraciones en Laravel
 ## Inicialización de Base de Datos
 ```bash
