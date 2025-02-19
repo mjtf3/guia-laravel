@@ -2,6 +2,13 @@
 
 site_name: Guia Laravel
 site_url: https://mjtf3.github.io/guia-laravel/
+nav:
+  - Inicio: "index.md"
+  - Instalación: "installation.md"
+  - Logging: "logging.md"
+  - Testing: "testing.md"
+  - Migraciones: "migrations.md"
+  - Seeders: "seeders.md"
 theme:
   name: material
   features:
