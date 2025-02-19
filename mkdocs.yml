@@ -8,7 +8,7 @@ nav:
   - Logging: "logging.md"
   - Testing: "testing.md"
   - Migraciones: "migrations.md"
-  - Seeders: "seeders.md"
+  - Seeders: "seeding.md"
 theme:
   name: material
   features:
