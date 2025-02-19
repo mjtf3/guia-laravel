@@ -1,4 +1,31 @@
 # Migraciones en Laravel
+## Configuración de la Base de Datos
+
+Laravel utiliza variables de entorno para la configuración de la base de datos. Estos valores se especifican en el archivo `.env` ubicado en la raíz del proyecto:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=dss
+DB_USERNAME=dss
+DB_PASSWORD=dss
+```
+
+> **Nota**: En los entornos de laboratorio, se proporciona una base de datos "dss" accesible con usuario "dss" y contraseña "dss".
+
+### Configuración para Pruebas
+
+Para habilitar las pruebas automatizadas con base de datos, modifica el archivo `phpunit.xml` en la raíz del proyecto:
+
+```xml
+<env name="DB_CONNECTION" value="mysql"/>
+<env name="DB_DATABASE" value="dss"/>
+```
+
+> **Tip**: Para evitar modificar la base de datos de desarrollo durante las pruebas, considera usar una base de datos separada para testing.
+
+
 ## Inicialización de Base de Datos
 ```bash
 php artisan migrate:install
@@ -79,7 +106,7 @@ $table->index('state');                 // Índice simple
 $table->string('email')->unique();      // Índice al crear campo
 ```
 
-### Claves Foráneas
+### Claves Foráneas (Foreigns Keys)
 Para crear relaciones entre tablas:
 ```php
 $table->foreignId('user_id')->constrained();

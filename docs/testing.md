@@ -31,9 +31,22 @@ Las pruebas se basan en aserciones que verifican el comportamiento esperado del 
 ```php
 class MathTest extends TestCase
 {
-        public function testExample()
-        {
-                $this->assertEquals(4, Math::sum(2, 2));
-        }
+    public function testExample()
+    {
+        $this->assertEquals(4, Math::sum(2, 2));
+    }
 }
 ```
+
+## Ejecución de Tests
+Para ejecutar los tests, puedes utilizar uno de los siguientes comandos:
+
+- Usando Artisan (recomendado en Laravel):
+    ```
+    php artisan test
+    ```
+
+- Usando PHPUnit directamente:
+    ```
+    ./vendor/bin/phpunit
+    ```
