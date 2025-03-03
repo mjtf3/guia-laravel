@@ -25,6 +25,9 @@ php artisan make:seeder UsersTableSeeder
 # Ejecutar todos los seeders
 php artisan db:seed
 
+# Ejecutar un único seeder
+php artisan db:seed --class=SeederAEjecutar
+
 # Refrescar la base de datos y sembrar
 php artisan migrate:refresh --seed
 ```
