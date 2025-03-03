@@ -9,6 +9,9 @@ nav:
   - Testing: "testing.md"
   - Migraciones: "migrations.md"
   - Seeders: "seeding.md"
+  - Rutas: "rutas.md"
+  - Vistas: "vistas.md"
+  - Blade: "blade.md"
 theme:
   name: material
   features:
